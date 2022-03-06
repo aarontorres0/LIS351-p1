@@ -117,3 +117,13 @@ nav ul {
 .about a {
   color: #ff9900;
 }
+
+.post-wrapper {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+
+.post-wrapper img {
+  width: 300px;
+}
