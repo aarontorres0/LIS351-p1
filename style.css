@@ -18,7 +18,6 @@ h1 {
 }
 
 li,
-button,
 label,
 input,
 p {
@@ -38,6 +37,11 @@ h3 {
 h4 {
   font-size: 2.8rem;
   font-weight: normal;
+  padding: 0px 20px;
+}
+
+dl {
+  font-size: 2.5rem;
 }
 
 a {
@@ -45,26 +49,12 @@ a {
   text-decoration: none;
 }
 
-button {
-  padding: 2rem 5rem;
-  background: #757575;
-  border: none;
-  color: #fafafa;
-  font-size: 1.8rem;
-  cursor: pointer;
-  transition: background 0.5s ease-in-out;
-}
-
-button:hover {
-  background: #191b24;
-}
-
 img {
   width: 600px;
   padding: 1rem;
 }
 
-.main-head {
+.nav {
   background-color: #ff9900;
   color: #fafafa;
 }
@@ -98,8 +88,7 @@ nav ul {
 
 .home,
 .about,
-.works,
-.started {
+.works {
   min-height: 90vh;
   background: #fafafa;
   color: #191b24;
@@ -107,11 +96,37 @@ nav ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: left;
 }
 
 .home h3 {
   padding: 2rem;
+}
+
+.started {
+  min-height: 90vh;
+  background: #fafafa;
+  color: #191b24;
+  display: flex;
+  flex-direction: column;
+}
+
+.started h2,
+.started h4 {
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.started dl {
+  background: #fafafa;
+  color: #191b24;
+  align-items: center;
+  margin: 0% 10%;
+}
+.started dd {
+  margin-left: 100px;
+  padding-bottom: 15px;
 }
 
 .about a,
@@ -119,10 +134,22 @@ nav ul {
   color: #ff9900;
 }
 
-.post-wrapper {
+.started-row {
   display: flex;
+  padding: 3rem;
+}
+
+.started-column {
+  flex: 50%;
+}
+
+.post-wrapper {
   gap: 10px;
   padding-bottom: 10px;
+}
+
+.post-wrapper div {
+  text-align: center;
 }
 
 .post-wrapper img {
